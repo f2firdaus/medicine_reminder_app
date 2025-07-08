@@ -17,6 +17,7 @@ const AddNew = () => {
   const [showDate, setShowDate] = useState(false);
   const [selectedTime, setSelectedTime] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [input,setInput]=useState("")
 
   const handleTimeChange = (event: DateTimePickerEvent, time?: Date) => {
     if (Platform.OS === "android") setShowTime(false);
