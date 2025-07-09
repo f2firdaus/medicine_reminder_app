@@ -1,7 +1,8 @@
 import { View, Text, StyleSheet} from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 const HomeScreen = () => {
+  const [show,setShow]=useState()
   return (
       <View style={styles.container}>
       <View>
